@@ -1,0 +1,39 @@
+@import 'mixins';
+
+footer {
+
+
+    .footer-navigation {
+        background: $footerBg;
+        @include widthContent;
+        height: 110px;
+        width: 374px;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        .tasbar {
+            width: 134px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, 0.25098039215686274);
+            margin: 0 auto;
+        }
+
+        .footer-navigation-items {
+            width: 100%;
+            height: 80px;
+
+            filter: drop-shadow(0px -13px 16.5px rgba(0, 0, 0, 0.05));
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .footer-navigation-item {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
