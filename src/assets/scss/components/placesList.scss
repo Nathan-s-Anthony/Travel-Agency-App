@@ -10,38 +10,66 @@
 
 .places-tile-items {
     width: 339px;
-    height: 106px;
+    height: 120px;
     border-radius: 17px;
     filter: drop-shadow(0px 13px 16.5px rgba(0, 0, 0, 0.05));
     background: $placesListBg;
     margin: 10px 0 10px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    align-items: flex-start;
+    justify-content: space-evenly;
     flex-flow: row-reverse;
 
-    .places-tile-info{
+    .places-tile-info {
         width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .places-tile-additional {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            span {
+                font-size: 10px;
+                color: $commentsLikes;
+                margin: -8px 0 0 0;
+
+            }
+        }
+
         h3 {
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             color: $placesTitle;
+            width: 100%;
         }
-    .places-tile-prices{
 
-        span{
-            font-size: 12px;
+        span {
+            color: $prices;
             font-weight: 600;
+            font-size: 12px;
+
         }
+
+        .places-tile-price-per-reduced {
+            text-decoration: line-through;
+            color: $pricesReduced;
+            margin-left: 10px;
+        }
+
     }
-    }
-   
+
     .placesList-item-img {
         width: 93px;
         height: 73px;
         border-radius: 8px;
         filter: drop-shadow(0px 13px 13.5px rgba(0, 0, 0, 0.1));
+        margin-top: 15px;
 
         img {
             width: 100%;
@@ -51,33 +79,13 @@
 
     }
 
-    .placesList-item-info {
-        height: 100%;
+}
 
-        .placesList-item-info-additional {
-            width: 100%;
-            height: 100%;
+.places-view-more {
+    display: flex;
+    justify-content: center;
 
-        }
-    }
-
-    .placesList-item-info-title {
-        font-size: 15px;
-        letter-spacing: 1px;
-        color: $placesTitle;
-
-    }
-
-    .placesList-item-info-price-value span {
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        color: $prices;
-        margin-right: 5px;
-
-        .placesList-item-info-price-value span:nth-child(1) {
-            text-decoration: line-through;
-        }
-
+    span {
+        margin-right: 6px;
     }
 }

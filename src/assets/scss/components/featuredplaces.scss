@@ -30,13 +30,14 @@
 
   .featured-tile-items {
     width: 164px;
-    height: 253px;;
+    height: 253px;
+    ;
     border-radius: 17px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-flow: column wrap;
     padding: 10px;
-  
+
     border-radius: 17px;
     filter: drop-shadow(0px 20px 13.5px rgba(0, 0, 0, 0.05));
     background-color: #fafafa;
@@ -44,98 +45,104 @@
     .featured-tile-additional {
       display: flex;
       width: 100%;
-      flex-flow:row wrap;
+      flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
 
-     .featured-tile-weather{
-       width: 50%;
-       display: flex;
-       flex-flow: row wrap;
-       gap: 5px;
-       .icon-align{
-         align-self: flex-end;
-       }
-       span{
-         font-size: 10px;
-       }
-       p{
-        font-size: 16px;
-        color: $temparature;
-       }
-     
-     }
-     .featured-tile-likes{
-      width: 50%;
+      .featured-tile-weather {
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5px;
+
+        .icon-align {
+          align-self: flex-end;
+        }
+
+        span {
+          font-size: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: $temparature;
+        }
+
+      }
+
+      .featured-tile-likes {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+
+        p {
+          font-size: 10px;
+
+          color: $featuredLikes;
+
+        }
+
+        sup {
+          font-size: 10px;
+          color: $likes;
+        }
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      color: $featuredPlacesHeading;
+      width: 140px;
+    }
+
+    .featured-tile-info {
       display: flex;
-      flex-flow: column wrap;
-      p{
-       font-size: 10px;
-    
-       color: $featuredLikes;
-       
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .featured-tile-more {
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      gap: 4px;
+      align-items: center;
+
+      p {
+        font-size: 10px;
+        font-weight: 500;
+        color: $featuredPlacesMore;
+        opacity: .50;
+
       }
-      sup{
-       font-size: 10px;
-       color: $likes;
+
+      span {
+        display: block;
+        background-color: $featuredPlacesDot;
+
+        width: 3px;
+        height: 3px;
+        border-radius: 2px;
       }
     }
-  }
 
-  h5 {
-    font-weight: 600;
-    color: $featuredPlacesHeading;
-    width: 140px;
-  }
-
-  .featured-tile-info {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  .featured-tile-more {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    gap: 4px;
-    align-items: center;
-
-    p {
-      font-size: 10px;
-      font-weight: 500;
-      color: $featuredPlacesMore;
-      opacity: .50;
-
-    }
-
-    span {
-      display: block;
-      background-color: $featuredPlacesDot;
-
-      width: 3px;
-      height: 3px;
-      border-radius: 2px;
-    }
-  }
-
-  .featured-tile-img {
-    width: 144px;
-    height: 106px;
-    border-radius: 8px;
-    filter: drop-shadow(0px 13px 20px rgba(0, 0, 0, 0.1));
-    background-image: linear-gradient(11deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-    margin: 0 auto 10px;
-
-    img {
-      width: 100%;
-      height: 100%;
+    .featured-tile-img {
+      width: 144px;
+      height: 106px;
       border-radius: 8px;
+      filter: drop-shadow(0px 13px 20px rgba(0, 0, 0, 0.1));
+      background-image: linear-gradient(11deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+      margin: 0 auto 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+      }
 
     }
 
   }
-
-}
 
 }
