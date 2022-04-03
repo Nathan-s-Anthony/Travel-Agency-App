@@ -8,6 +8,8 @@ import FeaturedPlaces from "./components/FeaturedPlaces.vue";
 import PlacesList from "./components/PlacesList.vue";
 import FooterNavigation from "./components/FooterNavigation.vue";
 import TripSliderItems from "./components/TripSliderItems.vue";
+import FeaturedPlacesItems from "./components/FeaturedPlacesItems.vue";
+
 </script>
 
 <template>
@@ -20,7 +22,9 @@ import TripSliderItems from "./components/TripSliderItems.vue";
     <TabWrapper>
       <TabItems title="DISCOVER">
         <TripSlider />
+        <!-- <TripSliderItems /> -->
         <FeaturedPlaces />
+        <FeaturedPlacesItems />
         <PlacesVist />
         <PlacesList />
       </TabItems>
