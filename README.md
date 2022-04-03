@@ -34,3 +34,4 @@ Run the following commands to setup, given `node` and `npm` is available:
 1. Fully functional slider
 2. Side Navigation menu with the respected navigation items
 3. Functional search option and notification area
+4. Functional Footer menu that provides navigation across the application
