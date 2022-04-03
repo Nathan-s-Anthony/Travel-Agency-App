@@ -17,5 +17,11 @@ export default defineConfig({
         additionalData: `@import "@/assets/scss/layout/base.scss";@import "@/assets/scss/colors/colors.scss";@import "@/assets/scss/font/typography.scss";`,
       },
     },
+    //configuring proxy to bypass cors error
+    server: {
+      proxy: {
+        "/api": "http://localhost:3000/",
+      },
+    },
   },
 });
