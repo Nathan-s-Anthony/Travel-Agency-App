@@ -9,6 +9,7 @@ import PlacesList from "./components/PlacesList.vue";
 import FooterNavigation from "./components/FooterNavigation.vue";
 import TripSliderItems from "./components/TripSliderItems.vue";
 import FeaturedPlacesItems from "./components/FeaturedPlacesItems.vue";
+import Newsletter from "./components/Newsletter.vue";
 
 </script>
 
@@ -30,6 +31,7 @@ import FeaturedPlacesItems from "./components/FeaturedPlacesItems.vue";
       </TabItems>
       <TabItems title="ACTIVITIES">Activities content</TabItems>
     </TabWrapper>
+    <Newsletter />
   </main>
   <footer>
 <FooterNavigation />
