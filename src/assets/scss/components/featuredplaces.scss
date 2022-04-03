@@ -16,20 +16,21 @@ flex-flow: row;
 justify-content: space-between;
 
  }
- .featured-tiles-container{
-  margin:45px 0 45px 0;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   width: 100%;
-   gap: 20px;
-   .featured-tile-items{
-    width: 164px;
-    height: 235px;
-    border-radius: 17px;
-    filter: drop-shadow(0px 20px 13.5px rgba(0,0,0,0.05));
-    background-color: #fafafa;
-
-   }
- }
+ 
   }
+  .featured-tiles-container{
+    margin:45px 0 45px 0;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     width: 100%;
+     gap: 20px;
+     .featured-tile-items{
+      width: 164px;
+      height: 235px;
+      border-radius: 17px;
+      filter: drop-shadow(0px 20px 13.5px rgba(0,0,0,0.05));
+      background-color: #fafafa;
+  
+     }
+   }
