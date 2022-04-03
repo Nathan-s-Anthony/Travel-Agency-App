@@ -2,25 +2,31 @@
   <div class="featured-container">
     <div class="featured">
       <h2>Featured</h2>
-      <AppButtons />
+      <AppButtons>
+        <template #text>See All </template>
+        <IconArrow />
+      </AppButtons>
     </div>
-    <div class="featured-tiles-container">
-    <div class="featured-tile-items">test</div>
-    <div class="featured-tile-items">test</div>
-     <div class="featured-tile-items">test</div>
-    <div class="featured-tile-items">test</div>
-    </div>
+   <div>
+
+   </div>
+  
   </div>
 </template>
-<style scoped lang="scss">
+<style lang="scss">
 @import "../assets/scss/components/featuredplaces.scss";
 </style>
 <script>
+
+import IconArrow from "./icons/IconArrow.vue";
 import AppButtons from "./AppButtons.vue";
+
 export default {
   name: "App",
   components: {
     AppButtons,
+    IconArrow,
+  
   },
 };
 </script>

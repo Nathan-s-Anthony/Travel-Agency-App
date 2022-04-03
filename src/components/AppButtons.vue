@@ -1,6 +1,6 @@
 <template>
     <button class="btn">
-       See All &#10095; 
+     <slot name="text"></slot>
        
     </button>
 </template>
