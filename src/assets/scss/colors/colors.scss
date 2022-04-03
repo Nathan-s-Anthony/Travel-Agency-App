@@ -23,7 +23,10 @@ $sliderInactive:rgba(255,255,255,0.25098039215686274);
 
 //Featured Section Colors
 $fontMainHeading :#444444;
-
+$featuredPlacesHeading :$fontMainHeading;
+$featuredPlacesMore :$fontTabActive;
+$featuredPlacesDot :#aaaaaa;
+$featuredLikes : #888888;
 //Places Visit Colors
 $mainHeadline :$overlayFont;
 $paraColor :$overlayFont;

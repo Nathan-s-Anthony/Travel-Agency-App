@@ -1,34 +1,34 @@
-  
   @font-face {
         font-family: "Montserrat";
         src: url("/src/assets/fonts/Monsterrat/Montserrat-Medium.ttf") format("truetype"),
-        url("/src/assets/fonts/Monsterrat/Montserrat-Bold.ttf") format("truetype"),
-    
+              url("/src/assets/fonts/Monsterrat/Montserrat-Bold.ttf") format("truetype"),
+
   }
-  
-body{
-      letter-spacing: 1px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 15px;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
- font-weight: 500;
- h1{
- font-size: 22px;
- color: $overlayFont;
- }
- h2{
-font-size: 25px;
 
- }     
- li{
+  body {
+        letter-spacing: 1px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 500;
 
- }
+        h1 {
+              font-size: 22px;
+              color: $overlayFont;
+        }
 
- h3{
-      font-size: 25px;
-      font-weight: 500;
- }
-}
- 
+        h2 {
+              font-size: 35px;
+              color: #444444;
+        }
+
+     
+
+        h3 {
+              font-size: 24px;
+              font-weight: 500;
+              color: $mainHeadline;
+        }
+  }

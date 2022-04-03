@@ -1,36 +1,119 @@
-.featured-container{
-    width: 100%;
-    height: 100%;
+.featured-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 15px;
+
+  .featured {
+    width: 340px;
+    background: inherit;
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+}
+
+.featured-tiles-container {
+  margin: 45px 0 80px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+
+  .featured-tile-items {
+    width: 164px;
+    height: 235px;
+    border-radius: 17px;
     display: flex;
     justify-content: flex-start;
-    flex-flow: column;
-    align-items: center;
-    margin-top: 15px;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 17px;
+    filter: drop-shadow(0px 20px 13.5px rgba(0, 0, 0, 0.05));
+    background-color: #fafafa;
 
-  .featured{
-width: 340px;
- background:inherit;
- margin-top: 25px;
-display: flex;
-flex-flow: row;
-justify-content: space-between;
+    .featured-tile-additional{
+      display: flex;
+      width: 100%;
+   flex-flow:column wrap;
+      justify-content: space-between;
+      align-items: center;
+      .featured-tile-weather
+      {
+       width: 50%;
+       .featured-tile-likes{
+        font-size: 10px;
+        color: $featuredLikes
+       }
+       .featured-tile-likes{
+width: 50%;
+       }
+      }
+    }
+ 
+    h5 {
+      font-weight: 600;
+      color: $featuredPlacesHeading;
+      width: 140px;
+    }
 
- }
+    .featured-tile-info {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .featured-tile-more {
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      gap: 4px;
+      align-items: center;
+
+      p {
+        font-size: 10px;
+        font-weight: 500;
+        color: $featuredPlacesMore;
+        opacity: .50;
+
+      }
+
+      span {
+        display: block;
+        background-color: $featuredPlacesDot;
+
+        width: 3px;
+        height: 3px;
+        border-radius: 2px;
+      }
+    }
+
+    .featured-tile-img {
+      width: 144px;
+      height: 106px;
+      border-radius: 8px;
+      filter: drop-shadow(0px 13px 20px rgba(0, 0, 0, 0.1));
+      background-image: linear-gradient(11deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+      margin: 0 auto 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+      }
+
+    }
  
   }
-  .featured-tiles-container{
-    margin:45px 0 45px 0;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
-     width: 100%;
-     gap: 20px;
-     .featured-tile-items{
-      width: 164px;
-      height: 235px;
-      border-radius: 17px;
-      filter: drop-shadow(0px 20px 13.5px rgba(0,0,0,0.05));
-      background-color: #fafafa;
   
-     }
-   }
+}
