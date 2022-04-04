@@ -1,7 +1,3 @@
-<script setup>
-import PlacesVisitItem from "./PlacesVisitItem.vue";
-import IconSunny from "./icons/IconSunny.vue";
-</script>
 <template>
   <div class="placesVisit-container">
     <h2>Places To Visit</h2>
@@ -11,16 +7,14 @@ import IconSunny from "./icons/IconSunny.vue";
         <p>Morbi urna elit, porta vitae convallis non, bibendum nec diam.</p>
         <hr />
         <div class="placesVisit-weather">
-            
           <PlacesVisitItem>
             <template #icon>
               <IconSunny />
             </template>
           </PlacesVisitItem>
           <div class="placesVisit-weather-info">
-                <h4> 22° </h4>
-          <span>Sunny</span>
-     
+            <h4>22°</h4>
+            <span>Sunny</span>
           </div>
         </div>
       </div>
@@ -30,3 +24,14 @@ import IconSunny from "./icons/IconSunny.vue";
 <style scoped lang="scss">
 @import "../assets/scss/components/placesVisit.scss";
 </style>
+<script>
+import PlacesVisitItem from "./PlacesVisitItem.vue";
+import IconSunny from "./icons/IconSunny.vue";
+export default {
+  name: "App",
+  components: {
+    PlacesVisitItem ,
+    IconSunny,
+  },
+};
+</script>

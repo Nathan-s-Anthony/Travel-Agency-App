@@ -30,7 +30,9 @@ $featuredLikes : #888888;
 //Places Visit Colors
 $mainHeadline :$overlayFont;
 $paraColor :$overlayFont;
-
+$gradientColor1 :hsla(334, 70%, 52%, 0.70); 
+$gradientColor2:hsla(353, 97%, 66%, 0.70);
+$gradientColor3:hsla(3, 96%, 68%, 0.70);
 //PlacesList Colors
 $placesListBg:#fafafa;
 $placesTitle :$fontMainHeading;
@@ -41,3 +43,6 @@ $temparature :#222222;
 $commentsLikes :$temparature;
 //footerMenu Colors
 $footerBg :$overlayFont;
+
+//Newsletter Colors
+$paraNews :$overlayFont;

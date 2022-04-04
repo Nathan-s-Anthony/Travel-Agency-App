@@ -8,10 +8,10 @@
     <h1>An exquisite trip you'll rave about to your friends</h1>
 
     <button>Get Access <span ><IconArrow /></span></button>
-    <div class="trip-slider-navigation">
+    <!-- <div class="trip-slider-navigation">
       <div class="navigation-dot"></div>
       <div class="navigation-dot"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 <style scoped lang="scss">

@@ -1,12 +1,3 @@
-<script setup>
-import FooterNavigationItems from "./FooterNavigationItems.vue";
-import IconTravel from "./icons/IconTravel.vue";
-import IconExplore from "./icons/IconExplore.vue";
-import IconSaved from "./icons/IconSaved.vue";
-import IconChat from "./icons/IconChat.vue";
-import IconProfile from "./icons/IconProfile.vue";
-</script>
-
 <template>
   <div class="footer-navigation">
     <div class="footer-navigation-items">
@@ -43,3 +34,21 @@ import IconProfile from "./icons/IconProfile.vue";
 <style scoped lang="scss">
 @import "../assets/scss/components/footer.scss";
 </style>
+<script>
+import FooterNavigationItems from "./FooterNavigationItems.vue";
+import IconTravel from "./icons/IconTravel.vue";
+import IconExplore from "./icons/IconExplore.vue";
+import IconSaved from "./icons/IconSaved.vue";
+import IconChat from "./icons/IconChat.vue";
+import IconProfile from "./icons/IconProfile.vue";
+export default {
+  name: "App",
+  components: {
+    FooterNavigationItems,
+    IconTravel,
+    IconExplore,
+     IconSaved,
+     IconChat,
+     IconProfile
+  },
+};</script>

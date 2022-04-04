@@ -19,9 +19,13 @@
       </div>
       <div class="featured-tile-additional">
         <div class="featured-tile-weather">
+          <div  class="icon-align">
           <IconSunnyAlt />
-          <p>{{ featured.meta.weather.conditions }}</p>
-          <p>{{ featured.meta.weather.temperature }}</p>
+          </div>
+          <div class="featured-tile-weather-info">
+            <p>{{ featured.meta.weather.temperature }}°</p>
+            <span>{{ featured.meta.weather.conditions }}</span>
+          </div>
         </div>
         <div class="featured-tile-likes">
           <div>
@@ -51,9 +55,9 @@ export default {
   },
   mounted() {
     //fetching the api data from the server
-
+    
     axios
-      .get("https://www.afrihost.com/resources/fedev/places.json")
+      .get("./src/places.json")
       .then((response) => {
         this.featured = response.data.featured;
       })
