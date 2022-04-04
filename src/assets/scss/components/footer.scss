@@ -6,9 +6,9 @@ footer {
         @include widthContent;
         height: 110px;
         width: 374px;
-        position: relative;
+        position: fixed;
         left: 0;
-        top: 0;
+        top: 34%;
 
         .tasbar {
             width: 134px;
